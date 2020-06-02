@@ -47,14 +47,14 @@ uses
 
 procedure TMainFrm.FormCreate(Sender: TObject);
 begin
-  FUDP := TUDP.Create;
+  //FUDP := TUDP.Create;
   FLog := GetIlog(ChangeFileExt(Application.ExeName, '.log'), True, 10, True);
 end;
 
 procedure TMainFrm.FormDestroy(Sender: TObject);
 begin
   FLog := nil;
-  FUDP.Free;
+  //FUDP.Free;
 end;
 
 procedure TMainFrm.ToggleBox1Change(Sender: TObject);
@@ -76,7 +76,7 @@ begin
   if FUDP.Connected then
     FUDP.Disconnect;
 
-  FUDP.Connect(edIP.Text);
+  FUDP.ConnectToServer(edIP.Text);
   Doc := TXmlDoc.Create;
   try
     with Doc.CreateNewDocumentElement('doc').AddChildNode('cmd') do
