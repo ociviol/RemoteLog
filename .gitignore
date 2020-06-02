@@ -1,0 +1,8 @@
+
+*.log
+*.o
+*.ppu
+*.a
+*.compiled
+*.obj
+*.dbg
