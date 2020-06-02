@@ -93,27 +93,21 @@ var
   ip : string;
   Doc : TXmlDoc;
 begin
-  if Assigned(FUDP) then
-    Button1.Caption:= ifthen(FUDP.Connected, 'Disconnect', 'Connect');
   if FUDP.Connected then
-  begin
-    FUDP.Connect(edIP.Text);
-    Doc := TXmlDoc.Create;
-    try
-      with Doc.CreateNewDocumentElement('doc').AddChildNode('cmd') do
-      begin
-        Text := 'register';
-        SetAttribute('IP', '10.211.55.34');
-      end;
-      FUDP.Send(Doc.AsString);
-    finally
-      Doc.Free;
-    end;
-  end
-  else
     FUDP.Disconnect;
 
-
+  FUDP.Connect(edIP.Text);
+  Doc := TXmlDoc.Create;
+  try
+    with Doc.CreateNewDocumentElement('doc').AddChildNode('cmd') do
+    begin
+      Text := 'register';
+      SetAttribute('IP', '10.211.55.34');
+    end;
+    FUDP.Send(Doc.AsString);
+  finally
+    Doc.Free;
+  end;
 end;
 
 

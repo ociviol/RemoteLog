@@ -39,7 +39,7 @@ object MainFrm: TMainFrm
     end
     object edIP: TEdit
       Left = 350
-      Height = 27
+      Height = 23
       Top = 11
       Width = 106
       TabOrder = 2
