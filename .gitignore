@@ -13,3 +13,9 @@
 Archives/2020-06-02 - RemoteLogNux.zip
 lib/x86_64-linux/RemoteLogNux.compiled
 *.compiled
+lib/x86_64-linux/RemoteLogNux.compiled
+*.compiled
+*.o
+lib/x86_64-linux/RemoteLogNux.compiled
+lib/x86_64-linux/RemoteLogNux.or
+lib/x86_64-linux/synafpc.ppu
