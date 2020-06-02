@@ -10,8 +10,3 @@
 *.o
 *.compiled
 *.dbg
-Archives/2020-06-02 - RemoteLogNux.zip
-lib/x86_64-linux/RemoteLogNux.compiled
-*.compiled
-lib/x86_64-win64/umain.lfm
-lib/x86_64-win64/RemoteLogWin.res
