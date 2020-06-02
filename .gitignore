@@ -10,3 +10,6 @@
 *.o
 *.compiled
 *.dbg
+Archives/2020-06-02 - RemoteLogNux.zip
+lib/x86_64-linux/RemoteLogNux.compiled
+*.compiled

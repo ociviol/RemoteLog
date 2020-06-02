@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Debug"/>
-    <Units Count="7">
+    <Units Count="10">
       <Unit0>
         <Filename Value="RemoteLogNux.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="25"/>
+        <UsageCount Value="26"/>
       </Unit0>
       <Unit1>
         <Filename Value="umain.pas"/>
@@ -20,10 +20,9 @@
         <ComponentName Value="MainFrm"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="28"/>
-        <CursorPos Y="48"/>
-        <UsageCount Value="25"/>
+        <TopLine Value="35"/>
+        <CursorPos Y="50"/>
+        <UsageCount Value="26"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -48,7 +47,7 @@
       <Unit5>
         <Filename Value="..\..\fpcupdeluxe\lazarus\lcl\stdctrls.pp"/>
         <UnitName Value="StdCtrls"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="1174"/>
         <CursorPos Y="1429"/>
         <UsageCount Value="12"/>
@@ -56,61 +55,161 @@
       </Unit5>
       <Unit6>
         <Filename Value="..\Utils\utils.udp.pas"/>
-        <EditorIndex Value="1"/>
-        <CursorPos X="30" Y="19"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="27"/>
+        <CursorPos Y="42"/>
         <UsageCount Value="10"/>
         <Loaded Value="True"/>
       </Unit6>
+      <Unit7>
+        <Filename Value="..\Utils\utils.logger.pas"/>
+        <UnitName Value="Utils.Logger"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="222"/>
+        <CursorPos Y="238"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <UnitName Value="UE_Server"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="66"/>
+        <CursorPos X="26" Y="75"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\..\fpcupdeluxe\lazarus\lcl\include\control.inc"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="3532"/>
+        <CursorPos Y="3547"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit9>
     </Units>
-    <JumpHistory Count="12" HistoryIndex="11">
+    <JumpHistory Count="30" HistoryIndex="28">
       <Position1>
-        <Filename Value="umain.pas"/>
-        <Caret Line="33" Column="13" TopLine="7"/>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="123" Column="24" TopLine="109"/>
       </Position1>
       <Position2>
-        <Filename Value="umain.pas"/>
-        <Caret Line="34" Column="13" TopLine="7"/>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="38" Column="20" TopLine="17"/>
       </Position2>
       <Position3>
-        <Filename Value="umain.pas"/>
-        <Caret Line="33" Column="13" TopLine="7"/>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="64" TopLine="50"/>
       </Position3>
       <Position4>
         <Filename Value="umain.pas"/>
-        <Caret Line="34" Column="13" TopLine="7"/>
+        <Caret Line="50" TopLine="35"/>
       </Position4>
       <Position5>
-        <Filename Value="umain.pas"/>
-        <Caret Line="43" Column="5" TopLine="14"/>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="64" TopLine="50"/>
       </Position5>
       <Position6>
-        <Filename Value="umain.pas"/>
-        <Caret Line="42" Column="59" TopLine="14"/>
+        <Filename Value="..\Utils\utils.logger.pas"/>
+        <Caret Line="124" TopLine="109"/>
       </Position6>
       <Position7>
-        <Filename Value="umain.pas"/>
-        <Caret Line="41" Column="59" TopLine="14"/>
+        <Filename Value="..\Utils\utils.logger.pas"/>
+        <Caret Line="324" TopLine="309"/>
       </Position7>
       <Position8>
-        <Filename Value="umain.pas"/>
-        <Caret Line="23" Column="27" TopLine="17"/>
+        <Filename Value="..\Utils\utils.logger.pas"/>
+        <Caret Line="237" Column="31" TopLine="222"/>
       </Position8>
       <Position9>
-        <Filename Value="umain.pas"/>
-        <Caret Line="44" Column="52" TopLine="24"/>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="64" TopLine="50"/>
       </Position9>
       <Position10>
-        <Filename Value="umain.pas"/>
-        <Caret Line="45" Column="5" TopLine="29"/>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="15" Column="3"/>
       </Position10>
       <Position11>
-        <Filename Value="umain.pas"/>
-        <Caret Line="9" Column="26"/>
+        <Filename Value="..\Utils\utils.logger.pas"/>
+        <Caret Line="237" TopLine="222"/>
       </Position11>
       <Position12>
-        <Filename Value="..\Utils\utils.udp.pas"/>
-        <Caret Line="10" Column="31" TopLine="4"/>
+        <Filename Value="..\Utils\utils.logger.pas"/>
+        <Caret Line="238" TopLine="222"/>
       </Position12>
+      <Position13>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="88" TopLine="81"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="64" TopLine="49"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\Utils\utils.udp.pas"/>
+        <Caret Line="42" TopLine="27"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\Utils\utils.udp.pas"/>
+        <Caret Line="43" TopLine="27"/>
+      </Position16>
+      <Position17>
+        <Filename Value="umain.pas"/>
+        <Caret Line="50" TopLine="35"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\Utils\utils.logger.pas"/>
+        <Caret Line="237" TopLine="222"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\Utils\utils.udp.pas"/>
+        <Caret Line="40" TopLine="27"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\Utils\utils.udp.pas"/>
+        <Caret Line="49" TopLine="27"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\Utils\utils.udp.pas"/>
+        <Caret Line="42" TopLine="27"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="63" TopLine="49"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="66" TopLine="49"/>
+      </Position23>
+      <Position24>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="64" TopLine="49"/>
+      </Position24>
+      <Position25>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="57" TopLine="46"/>
+      </Position25>
+      <Position26>
+        <Filename Value="..\Utils\utils.logger.pas"/>
+        <Caret Line="238" TopLine="222"/>
+      </Position26>
+      <Position27>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="70" Column="51" TopLine="37"/>
+      </Position27>
+      <Position28>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="39" Column="34" TopLine="22"/>
+      </Position28>
+      <Position29>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Line="74" Column="23" TopLine="66"/>
+      </Position29>
+      <Position30>
+        <Filename Value="..\Utils\ue_server.pas"/>
+        <Caret Column="6"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
@@ -118,7 +217,7 @@
     </RunParams>
   </ProjectSession>
   <Debugging>
-    <BreakPoints Count="5">
+    <BreakPoints Count="17">
       <Item1>
         <Kind Value="bpkSource"/>
         <WatchScope Value="wpsLocal"/>
@@ -144,16 +243,100 @@
         <Kind Value="bpkSource"/>
         <WatchScope Value="wpsLocal"/>
         <WatchKind Value="wpkWrite"/>
-        <Source Value="umain.pas"/>
-        <Line Value="49"/>
+        <Source Value="..\Utils\utils.logger.pas"/>
+        <Line Value="218"/>
       </Item4>
       <Item5>
         <Kind Value="bpkSource"/>
         <WatchScope Value="wpsLocal"/>
         <WatchKind Value="wpkWrite"/>
-        <Source Value="umain.pas"/>
-        <Line Value="48"/>
+        <Source Value="..\Utils\ue_server.pas"/>
+        <Line Value="145"/>
       </Item5>
+      <Item6>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\Utils\ue_server.pas"/>
+        <Line Value="111"/>
+      </Item6>
+      <Item7>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\Utils\ue_server.pas"/>
+        <Line Value="136"/>
+      </Item7>
+      <Item8>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\Utils\ue_server.pas"/>
+        <Line Value="135"/>
+      </Item8>
+      <Item9>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\Utils\ue_server.pas"/>
+        <Line Value="65"/>
+      </Item9>
+      <Item10>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\Utils\utils.logger.pas"/>
+        <Line Value="238"/>
+      </Item10>
+      <Item11>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\Utils\utils.logger.pas"/>
+        <Line Value="237"/>
+      </Item11>
+      <Item12>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\Utils\ue_server.pas"/>
+        <Line Value="100"/>
+      </Item12>
+      <Item13>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\Utils\utils.udp.pas"/>
+        <Line Value="42"/>
+      </Item13>
+      <Item14>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\Utils\utils.udp.pas"/>
+        <Line Value="49"/>
+      </Item14>
+      <Item15>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\Utils\ue_server.pas"/>
+        <Line Value="82"/>
+      </Item15>
+      <Item16>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\Utils\ue_server.pas"/>
+        <Line Value="87"/>
+      </Item16>
+      <Item17>
+        <Kind Value="bpkSource"/>
+        <WatchScope Value="wpsLocal"/>
+        <WatchKind Value="wpkWrite"/>
+        <Source Value="..\Utils\ue_server.pas"/>
+        <Line Value="58"/>
+      </Item17>
     </BreakPoints>
   </Debugging>
 </CONFIG>

@@ -6,6 +6,9 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
+  {$if defined(Darwin) or defined(Linux)}
+  cthreads,
+  {$endif}
   SynEdit, Utils.Logger, Utils.UDP, blcksock;
 
 type
@@ -26,7 +29,6 @@ type
   private
     FLog : ILog;
     FUDP : TUDP;
-    procedure QueryData;
   public
 
   end;
@@ -60,31 +62,9 @@ begin
   ToggleBox1.Caption:= ifthen(ToggleBox1.State = cbChecked, 'Stop', 'Start') + ' Server';
   if Assigned(FUDP) then
     if (ToggleBox1.State = cbChecked) and not FUDP.Connected then
-      FUDP.Connect(edIP.Text)
+      FUDP.StartServer
     else
       FUdp.Disconnect;
-end;
-
-procedure TMainFrm.QueryData;
-var
-  Doc : TXmlDoc;
-  s : string;
-begin
-  Doc := TXmlDoc.Create;
-  try
-    if not FUDP.Connected then
-      FUDP.Connect(edIP.Text);
-    with doc.CreateNewDocumentElement('cmd') do
-    begin
-      Text := 'ls';
-      SetAttribute('ln', 0);
-      SetAttribute('IP', '10.211.55.34');
-      s := FUDP.Send(Doc.AsString);
-      doc.AsString:=s;
-    end;
-  finally
-    Doc.Free;
-  end;
 end;
 
 procedure TMainFrm.Button1Click(Sender: TObject);
@@ -97,7 +77,7 @@ begin
     Button1.Caption:= ifthen(FUDP.Connected, 'Disconnect', 'Connect');
   if FUDP.Connected then
   begin
-    FUDP.Connect(edIP.Text);
+    FUDP.ConnectToServer(edIP.Text);
     Doc := TXmlDoc.Create;
     try
       with Doc.CreateNewDocumentElement('doc').AddChildNode('cmd') do
@@ -112,8 +92,6 @@ begin
   end
   else
     FUDP.Disconnect;
-
-
 end;
 
 
