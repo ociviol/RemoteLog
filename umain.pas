@@ -29,6 +29,7 @@ type
   private
     FLog : ILog;
     FUDP : TUDP;
+    procedure OnServerReceive(const Data : String; Socket : TUDPBlockSocket);
   public
 
   end;
@@ -47,14 +48,14 @@ uses
 
 procedure TMainFrm.FormCreate(Sender: TObject);
 begin
-  //FUDP := TUDP.Create;
+  FUDP := TUDP.Create(@OnServerReceive);
   FLog := GetIlog(ChangeFileExt(Application.ExeName, '.log'), True, 10, True);
 end;
 
 procedure TMainFrm.FormDestroy(Sender: TObject);
 begin
   FLog := nil;
-  //FUDP.Free;
+  FUDP.Free;
 end;
 
 procedure TMainFrm.ToggleBox1Change(Sender: TObject);
@@ -65,6 +66,26 @@ begin
       FUDP.StartServer
     else
       FUdp.Disconnect;
+end;
+
+procedure TMainFrm.OnServerReceive(const Data: String; Socket: TUDPBlockSocket);
+var
+  ln, i : integer;
+  ip : string;
+  Doc : TXmlDoc;
+begin
+  Doc := TXmlDoc.Create;
+  try
+    Doc.AsString := Data;
+    with Doc.DocumentElement do
+      for i := 0 to NbElements - 1 do
+        if Elements[i].TagName = 'data' then
+        begin
+          Memo1.Lines.Add(Elements[i].Text);
+        end;
+  finally
+    Doc.Free;
+  end;
 end;
 
 procedure TMainFrm.Button1Click(Sender: TObject);
