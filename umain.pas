@@ -46,7 +46,7 @@ uses
 procedure TMainFrm.FormCreate(Sender: TObject);
 begin
   FUDP := TUDP.Create;
-  FLog := GetIlog(ChangeFileExt(Application.ExeName, '.log'));
+  FLog := GetIlog(ChangeFileExt(Application.ExeName, '.log'), True, 10, True);
 end;
 
 procedure TMainFrm.FormDestroy(Sender: TObject);

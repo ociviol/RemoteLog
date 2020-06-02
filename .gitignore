@@ -9,3 +9,4 @@
 *.ppu
 *.o
 *.compiled
+*.dbg
