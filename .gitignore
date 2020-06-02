@@ -6,3 +6,6 @@
 *.compiled
 *.obj
 *.dbg
+*.ppu
+*.o
+*.compiled

@@ -30,8 +30,8 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <Libraries Value="..\Synapse\Synapse\source\lib"/>
-            <OtherUnitFiles Value="..\Synapse\Synapse\source\lib"/>
+            <Libraries Value="..\Synapse\Synapse\source\lib;..\Utils;..\XmlReader\XmlDoc"/>
+            <OtherUnitFiles Value="..\Synapse\Synapse\source\lib;..\Utils;..\XmlReader\XmlDoc"/>
             <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
           </SearchPaths>
           <Parsing>
