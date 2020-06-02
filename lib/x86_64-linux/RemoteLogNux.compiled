@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/home/mat/fpcupdeluxe/fpc/bin/x86_64-linux/fpc.sh" Date="1588883205"/>
+  <Params Value=" -MObjFPC -Scaghi -Cg -CirotR -gw2 -godwarfsets -gl -gh -Xg -gt -l -vewnhibq -Fi/home/mat/Dev/RemoteLog/lib/x86_64-linux -Fl/home/mat/Dev/Synapse/Synapse/source/lib -Fu/home/mat/Dev/Synapse/Synapse/source/lib -Fu/home/mat/fpcupdeluxe/lazarus/components/synedit/units/x86_64-linux/gtk2 -Fu/home/mat/fpcupdeluxe/lazarus/lcl/units/x86_64-linux/gtk2 -Fu/home/mat/fpcupdeluxe/lazarus/lcl/units/x86_64-linux -Fu/home/mat/fpcupdeluxe/lazarus/components/lazutils/lib/x86_64-linux -Fu/home/mat/fpcupdeluxe/lazarus/packager/units/x86_64-linux -Fu/home/mat/Dev/RemoteLog/ -FU/home/mat/Dev/RemoteLog/lib/x86_64-linux/ -FE/home/mat/Dev/RemoteLog/ -o/home/mat/Dev/RemoteLog/RemoteLogNux -dLCL -dLCLgtk2 RemoteLogNux.lpr"/>
+</CONFIG>
